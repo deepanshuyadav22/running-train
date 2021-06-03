@@ -1,0 +1,215 @@
+body
+	{
+		margin:0;
+		overflow:hidden;
+	}
+
+.bg_img_container
+	{
+		width:100%;
+		height:100%;
+		position:absolute;
+		top:0;
+		left:0;
+		overflow:hidden;
+	}
+
+.bg
+	{
+	  	width:100%;
+	  	height:auto;
+	  	position:absolute;
+	  	bottom:0;
+	  	left:0;
+	  	opacity:0;
+	  	z-index:0;
+	  	animation:bg_img_anm 100s linear 1;
+	}
+
+@keyframes bg_img_anm
+	{
+		0%
+		  	{
+			  	bottom:-2000%;
+			  	opacity:1;
+			}
+	  	100%
+		  	{
+			  	bottom:0%;
+			  	opacity:1;
+		  	}
+	}
+
+.container
+	{
+		width:1566px;
+		height:768px;
+		overflow:hidden;
+	}
+
+.hills_rear
+	{
+		position:absolute;
+		bottom:0;
+		width:1400px;
+		height:500px;
+		background:url("Images/Hills_Rear.png");
+		background-repeat:repeat-x;
+		background-position:bottom center;
+		background-size:contain;
+		animation:hills_rear 40s infinite linear both;
+	  	animation-delay:12500ms;
+	}
+
+@keyframes hills_rear
+	{
+		0%
+			{
+				background-position:0px 0px;
+			}
+		100%
+			{
+				background-position:1366px 0px;
+			}
+	}
+
+.hills_front
+	{
+		position:absolute;
+		bottom:0;
+		width:1920px;
+		height:1080px;
+		background:url("Images/Hills_Front.png");
+		background-repeat:repeat-x;
+		background-position:bottom center;
+		background-size:contain;
+		animation:hills_front 20s infinite linear both;
+	  	animation-delay:13500ms;
+	}
+
+@keyframes hills_front
+	{
+		0%
+			{
+				background-position:0px 0px;
+			}
+		100%
+			{
+				background-position:1366px 0px;
+			}
+	}
+
+.track
+	{
+		position:absolute;
+		bottom:0;
+		width:1920px;
+		height:45px;
+		background:url("Images/Track.png");
+		background-repeat:repeat-x;
+		background-position:bottom center;
+		background-size:contain;
+		animation:track 20s infinite linear both;
+	  	animation-delay:14s;
+	}
+
+@keyframes track
+	{
+		0%
+			{
+				background-position:0px 0px;
+			}
+		100%
+			{
+				background-position:1366px 0px;
+			}
+	}
+
+.train
+	{
+		position:absolute;
+		bottom:20px;
+		left:370px;
+		width:1000px;
+		height:300px;
+		background:url("Images/Train.png");
+		background-repeat:repeat-x;
+		background-position:bottom right;
+		background-size:contain;
+		animation:train 100s 1 linear both;
+	  	animation-delay:14s;
+	}
+
+@keyframes train
+	{
+		0%
+			{
+				left:700px;
+			}
+		100%
+			{
+				left:370px;
+			}
+	}
+
+.sun_container
+	{
+	    width:24cm;
+	    height:3cm;
+	    position:absolute;
+	    top:11cm;
+	    left:3cm;
+	    animation:path 100s linear 1;
+	  	animation-delay:14s;
+	}
+
+.sun
+	{
+	    position:absolute;
+	    bottom:0;
+	    left:0;
+	    width:3cm;
+	    height:3cm;
+	    background:yellow;
+	    border-radius:50%;
+	}
+
+@keyframes path
+	{
+		0%
+			{
+				transform:rotate(0deg);
+			}
+		8%
+			{
+				transform:rotate(0deg);
+			}
+		26%
+			{
+				transform:rotate(40deg);
+			}
+		45%
+			{
+				transform:rotate(90deg);
+			}
+		60%
+			{
+				transform:rotate(120deg);
+			}
+		78%
+			{
+				transform:rotate(130deg);
+			}
+		84%
+			{
+				transform:rotate(165deg);
+			}
+		86%
+			{
+				transform:rotate(175deg);
+			}
+		100%
+			{
+				transform:rotate(180deg);
+			}
+	}
